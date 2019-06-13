@@ -1,0 +1,305 @@
+*{
+  margin: 0;
+  font-family: Raleway;
+}
+/* scrollbar*/
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #900048;
+}
+/* navegador */
+.notificacion{
+  background-color: #9994FF;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: 16px;
+}
+.notificacion h1{
+  font-size: 14px;
+  color: white;
+  font-weight: 200;
+}
+/* navegador */
+#bienvenidoUsuario{
+  display: block;
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  margin-top: 22px;
+  float: right;
+}
+.navegador{
+  background: -webkit-linear-gradient(#900048, #5F002F);
+  width: 90%;
+  height: 60px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+}
+.logo{
+  background-image: url("../sources/logo_white.png");
+  background-size: cover;
+  float: left;
+  width: 265px;
+  height: 60px;
+}
+.btn_iniciar_sesion_estilo{
+  background-color: none;
+  float: right;
+  text-align: center;
+  width: 120px;
+  height: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 70px;
+  font-size: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+}
+.btn_iniciar_sesion_estilo:hover{
+  background-color: white;
+  color: #900048;
+}
+.icono_usuario{
+  background-image: url("../sources/user_icon.png");
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+.panel_iniciar_sesion{
+
+  background: -webkit-linear-gradient(#900048, #5F002F);
+  width: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.formulario_iniciar_sesion{
+  /*display: none;*/
+}
+.formulario_iniciar_sesion h1{
+  color: white;
+  font-size: 20px;
+}
+.formulario_registro{
+  display: none;
+}
+.formulario_registro h1{
+  color: white;
+  font-size: 20px;
+}
+.link{
+  color: white;
+
+}
+.selector{
+  width: 100%;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  outline: none;
+}
+.input_estilo{
+  width: 90%;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  outline: none;
+  font-size: 16px;
+}
+.btn_estilo{
+  background-color: #5F002F;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 100px;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn_estilo:hover{
+  background-color: white;
+  color: #5F002F;
+}
+/* panel principal */
+.panel_principal{
+  background-image: url("../sources/background_stgo.jpg");
+  background-size: cover;
+  width: 60%;
+  padding-top: 70vh;
+  padding-bottom: 15vh;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.panel_principal p{
+  text-align: justify;
+  color: white;
+  font-size: 18px;
+}
+.btn_planificacion{
+  background:  -webkit-linear-gradient(#900048, #5F002F);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  width: 70%;
+  height: 40px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.btn_planificacion:hover{
+  background: white;
+  color: #5F002F;
+}
+/* contenido viajesg */
+.contenido_viajes{
+  background-color: white;
+  width: 100%;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+.titulo_contenido_viajes{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.titulo_contenido_viajes h1{
+  color: #5F002F;
+}
+.fila{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.box{
+  display: inline-block;
+  background-color: black;
+  width: 250px;
+  height: 25px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px black;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+.panel_informacion{
+  background-color: #ffe3ef;
+  width: 60%;
+  height: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.textoInfo p{
+  color: #900048;
+}
+.textoInfo{
+  float: right;
+  width: 55%;
+  text-align: justify;
+}
+.imgInfo{
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+.btn_box{
+  float: right;
+  width: 300px;
+  height: 30px;
+  margin-top: 40px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 90px;
+  background: none;
+  border: 1px solid #900048;
+  color: #900048;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn_box:hover{
+  color: white;
+  background: #900048;
+}
+#santiago{
+  background-image: url("../sources/destinos/santiago.jpg");
+  background-size: cover;
+}
+#concepcion{
+  background-image: url("../sources/destinos/concepcion.jpg");
+  background-size: cover;
+}
+#losangeles{
+  background-image: url("../sources/destinos/losangeles.jpg");
+  background-size: cover;
+}
+#lima{
+  background-image: url("../sources/destinos/lima.jpg");
+  background-size: cover;
+}
+#tacna{
+  background-image: url("../sources/destinos/tacna.jpg");
+  background-size: cover;
+}
+#cusco{
+  background-image: url("../sources/destinos/cusco.jpg");
+  background-size: cover;
+}
+#lasvegas{
+  background-image: url("../sources/destinos/lasvegas.jpg");
+  background-size: cover;
+}
+#washington{
+  background-image: url("../sources/destinos/washington.jpg");
+  background-size: cover;
+}
+#newyork{
+  background-image: url("../sources/destinos/newyork.jpg");
+  background-size: cover;
+}
+/* contenido ranking */
+.contenido_ranking{
+  background: -webkit-linear-gradient(#900048, #5F002F);
+  width: 100%;
+  height: 93vh;
+}
+/* footer */
+.footer{
+  width: 100%;
+  height: 500px;
+}

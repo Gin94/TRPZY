@@ -77,12 +77,12 @@
     <div class="contenido_viajes">
       <div class="primera fila">
         <center>
-          <div id="santiago" class="box" onclick="mostrarInfoViaje('santiago')">Santiago</div>
-          <div id="concepcion" class="box" onclick="mostrarInfoViaje('concepcion')">Concepcion</div>
-          <div id="losangeles" class="box" onclick="mostrarInfoViaje('losangeles')">Los Angeles</div>
+          <div id="santiago" class="box">Santiago</div>
+          <div id="concepcion" class="box">Concepcion</div>
+          <div id="losangeles" class="box">Los Angeles</div>
         </center>
       </div>
-      <div class="panel_informacion primera">
+      <div class="panel_informacion infoUno">
         <img class="imgInfo" src="./sources/destinos/santiago.jpg">
         <div class="textoInfo"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -90,7 +90,7 @@
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <a href="#"><button type="button" class="btn_box" >Planificar</button></a>
+        <a id="btnUrl" href="paginaPlanificacion.php?id=santiago"><button type="button" class="btn_box" >Planificar</button></a>
       </div>
       <div class="segunda fila">
         <center>
@@ -99,7 +99,7 @@
           <div id="tacna" class="box">Tacna</div>
         </center>
       </div>
-      <div class="panel_informacion segunda"></div>
+      <div class="panel_informacion infoDos"></div>
       <div class="tercera fila">
         <center>
           <div id="lasvegas" class="box">Las Vegas</div>
@@ -107,7 +107,7 @@
           <div id="newyork" class="box">New Yrok</div>
         </center>
       </div>
-      <div class="panel_informacion tercera"></div>
+      <div class="panel_informacion infoTres"></div>
     </div>
     <!-- contenido ranking -->
     <div class="contenido_ranking"></div>

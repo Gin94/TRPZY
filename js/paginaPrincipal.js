@@ -1,6 +1,7 @@
 $(document).ready(function(){
 $(".panel_iniciar_sesion").hide();
 $(".notificacion").hide();
+$(".infoUno").hide();
 
   $("#btn_iniciar_sesion").click(function(){
     $(".formulario_iniciar_sesion").css("display", "block");
@@ -24,12 +25,48 @@ $(".notificacion").hide();
   });
 
   //ingresar usuario, transformar panel, esconder boton
-  function mostrarInfoViaje(id){
-    switch(id){
-      case 'santiago':
-        
-      break;
+  var show = '';
+  var open = false;
+
+  $("#santiago").click(function(){
+    if(show == 'santiago' && open == true){
+      $(".infoUno").hide(200);
+      open = false;
     }
-  }
+    else{
+      $(".infoUno").show(200);
+      $(".imgInfo").attr("src", "./sources/destinos/santiago.jpg");
+      $("#btnUrl").attr("href", "paginaPlanificacion.php?id=santiago");
+      show = 'santiago';
+      open = true;
+    }
+  });
+  $("#concepcion").click(function(){
+    if(show == 'concepcion' && open == true){
+      $(".infoUno").hide(200);
+      open = false;
+    }
+    else{
+      $(".infoUno").show(200);
+      $(".imgInfo").attr("src", "./sources/destinos/concepcion.jpg");
+      $("#btnUrl").attr("href", "paginaPlanificacion.php?id=concepcion");
+      show = 'concepcion';
+      open = true;
+    }
+  });
+  $("#losangeles").click(function(){
+    if(show == 'losangeles' && open == true){
+      $(".infoUno").hide(200);
+      open = false;
+    }
+    else{
+      $(".infoUno").show(200);
+      $(".imgInfo").attr("src", "./sources/destinos/losangeles.jpg");
+      $("#btnUrl").attr("href", "paginaPlanificacion.php?id=losangeles");
+      show = 'losangeles';
+      open = true;
+    }
+  });
+
 
 });

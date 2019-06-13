@@ -33,7 +33,6 @@
          <input type="button" value="Lugar de Comida" class="btnOpciones" id="btnOpcComida">
          <input type="button" value="Actividad o Evento" class="btnOpciones" id="btnOpcEvento">
      </div>
-
      <div class="extra-1" id="extra" >
        <h3>Quizas te puede ayudar...</h3>
         <div class="uno">
@@ -42,7 +41,6 @@
         <div class="uno">
             <p>Aca otra cosa.</p>
         </div>
-
      </div>
 
 <!--CONTENEDOR DE LOS FORMULARIOS-->
@@ -50,74 +48,74 @@
 <!--*******************FORMULARIO DE HOSPEDAJES****************************-->
 
 <div class="boxHospedaje" id="hospedaje">
-<center><h2 style="padding:10px;">Formulario de Hospedaje.</h2></center>
-<h3 style="padding:10px;">Completa el siguiente formulario para poder publicar tu propuesta con nosotros. Los campos con (*) son obligatorios. </h3>
-    <table width="90%" class="tabla">
-           <tr>
-                <td>(*) Nombre:</td>
-                <td><input size="30%" type="text" id="nombre_h" placeholder="Nombre del hospedaje" required></td>
-           </tr>
-            <tr>
-                <td>(*) Descripcion:</td>
-                <td><textarea size="30%" id="descripcion_h" cols="60" rows="10" placeholder="Incluye lugares cercanos, ambiente, condiciones llegada y salida, etc." required></textarea></td>
-           </tr>
-            <tr>
-                <td>(*) Dirección:</td>
-                <td><input size="30%" type="text" id="direccion_h"></td>
-           </tr>
-            <tr>
-                <td>(*) Imagen</td>
-                <td><input type= "file" id="imagen_h" required max="4"></td>
-           </tr>
-            <tr>
-                <td>(*) Precio:</td>
-                <td><input size="30%" type="text" id="precio_h" placeholder="precio base de una habitacion"></td>
-           </tr>
+  <center><h2 style="padding:10px;">Formulario de Hospedaje.</h2></center>
+  <h3 style="padding:10px;">Completa el siguiente formulario para poder publicar tu propuesta con nosotros. Los campos con (*) son obligatorios. </h3>
+  <table width="90%" class="tabla">
+    <tr>
+         <td>(*) Nombre:</td>
+         <td><input size="30%" type="text" id="nombre_h" placeholder="Nombre del hospedaje" required></td>
+    </tr>
+     <tr>
+         <td>(*) Descripcion:</td>
+         <td><textarea size="30%" id="descripcion_h" cols="60" rows="10" placeholder="Incluye lugares cercanos, ambiente, condiciones llegada y salida, etc." required></textarea></td>
+    </tr>
+     <tr>
+         <td>(*) Dirección:</td>
+         <td><input size="30%" type="text" id="direccion_h"></td>
+    </tr>
+     <tr>
+         <td>(*) Imagen</td>
+         <td><input type= "file" id="imagen_h" required max="4"></td>
+    </tr>
+     <tr>
+         <td>(*) Precio:</td>
+         <td><input size="30%" type="text" id="precio_h" placeholder="precio base de una habitacion"></td>
+    </tr>
 
-             <tr>
-                <td>Enlace Página Web:</td>
-                <td><input size="30%" type="text" id="enlace_h"></td>
-           </tr>
-             <tr>
-                <td>(*) Reserva:</td>
-                <td><input size="30%" type="text" id="reserva_h"  placeholder="¿Requiere de reserva previa? SI/NO" required></td>
-           </tr>
-           <tr>
-                <td>(*) Tipo de hospedaje:</td>
-                <td><select id="hospedaje" required>
-                    <option value="hotel">Hotel</option>
-                    <option value="hostal">Hostal</option>
-                    <option value="cabana">Cabaña</option>
-                    <option value="departamento">Departamento</option>
-                    <option value="casa">Casa</option>
-                </select></td>
-            </tr>
-            <tr><!--ACA DEBO SACAR EL VALUE!!!!-->
-                <td>(*) Tipos de habitaciones:</td>
-                <td> <br><br>
-                   <input type="checkbox" value="simple" id="habitacion">Simple
-                   <input type="checkbox" value="doble" id="habitacion">Doble
-                   <input type="checkbox" value="matrimonial" id="habitacion">Matrimonial
-                </td>
-            </tr>
-            <tr>
-                <td>(*) Servicios a ofrecer:</td>
-                <td>
-                  <br><br>
-                   <input type="checkbox" value="estacionamiento" id="servicios">Estacionamiento
-                   <input type="checkbox" value="wifi" id="servicios">Wifi
-                   <input type="checkbox" value="mascota" id="servicios">Acepta mascotas
-                   <br>
-                   <input type="checkbox" value="acceso" id="servicios">Acceso discapacitados
-                   <input type="checkbox" value="lavanderia" id="servicios">Lavanderia
-                   <input type="checkbox" value="otros" id="servicios">Otros
-                </td>
-            </tr>
-            <tr>
-                <td>  </td>
-                <td><br><button type="button" name="button" id="btn-1" onclick="ingresarHospedaje();">PUBLICAR</button></td>
-           </tr>
-            </table>
+      <tr>
+         <td>Enlace Página Web:</td>
+         <td><input size="30%" type="text" id="enlace_h"></td>
+    </tr>
+      <tr>
+         <td>(*) Reserva:</td>
+         <td><input size="30%" type="text" id="reserva_h"  placeholder="¿Requiere de reserva previa? SI/NO" required></td>
+    </tr>
+    <tr>
+         <td>(*) Tipo de hospedaje:</td>
+         <td><select id="hospedaje" required>
+             <option value="hotel">Hotel</option>
+             <option value="hostal">Hostal</option>
+             <option value="cabana">Cabaña</option>
+             <option value="departamento">Departamento</option>
+             <option value="casa">Casa</option>
+         </select></td>
+     </tr>
+     <tr><!--ACA DEBO SACAR EL VALUE!!!!-->
+         <td>(*) Tipos de habitaciones:</td>
+         <td> <br><br>
+            <input type="checkbox" value="simple" id="habitacion">Simple
+            <input type="checkbox" value="doble" id="habitacion">Doble
+            <input type="checkbox" value="matrimonial" id="habitacion">Matrimonial
+         </td>
+     </tr>
+     <tr>
+         <td>(*) Servicios a ofrecer:</td>
+         <td>
+           <br><br>
+            <input type="checkbox" value="estacionamiento" id="servicios">Estacionamiento
+            <input type="checkbox" value="wifi" id="servicios">Wifi
+            <input type="checkbox" value="mascota" id="servicios">Acepta mascotas
+            <br>
+            <input type="checkbox" value="acceso" id="servicios">Acceso discapacitados
+            <input type="checkbox" value="lavanderia" id="servicios">Lavanderia
+            <input type="checkbox" value="otros" id="servicios">Otros
+         </td>
+     </tr>
+     <tr>
+         <td>  </td>
+         <td><br><button type="button" name="button" id="btn-1" onclick="ingresarHospedaje();">PUBLICAR</button></td>
+    </tr>
+  </table>
 </div>
 
 <!---------------------Funcion en ajax para guardar los datos en la BD--------------------->

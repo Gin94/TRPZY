@@ -10,7 +10,6 @@ $(document).ready(function(){
     $(".boxActividad").hide(200);
     $(".boxHospedaje").toggle(200);
   });
-
   $("#btnOpcComida").click(function(){
     $(".boxHospedaje").hide(200);
     $(".boxComida").hide(200);

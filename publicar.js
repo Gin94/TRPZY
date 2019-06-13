@@ -1,25 +1,53 @@
 //*********FUNCIONES RELACIONADAS CON EL REGISTRO DE LOS NEGOCIOS EN LA PAGINA**************
+$(document).ready(function(){
+  $(".boxHospedaje").hide();
+  $(".boxComida").hide();
+  $(".boxActividad").hide();
+
+  $("#btnOpcHospedaje").click(function(){
+    $(".boxHospedaje").hide(200);
+    $(".boxComida").hide(200);
+    $(".boxActividad").hide(200);
+    $(".boxHospedaje").toggle(200);
+  });
+
+  $("#btnOpcComida").click(function(){
+    $(".boxHospedaje").hide(200);
+    $(".boxComida").hide(200);
+    $(".boxActividad").hide(200);
+    $(".boxComida").toggle(200);
+  });
+  $("#btnOpcEvento").click(function(){
+    $(".boxHospedaje").hide(200);
+    $(".boxComida").hide(200);
+    $(".boxActividad").hide(200);
+    $(".boxActividad").toggle(200);
+  });
+});
+
+/*
 
 //FUNCIONES DE CAMBIO DE FORMULARIO+++++++++++++++++++++++++++++++++++++++++++********
 function Mostrar_h(){
-document.getElementById("hospedaje").style.display = "block";
-document.getElementById("extra").style.display = "block";
-document.getElementById("comida").style.display = "none";
-document.getElementById("actividad").style.display = "none";
+
+  document.getElementById("hospedaje").style.display = "block";
+  document.getElementById("comida").style.display = "block";
+  document.getElementById("comida").style.display = "none";
+  document.getElementById("actividad").style.display = "none";
 }
 
 function Mostrar_lc(){
-document.getElementById("hospedaje").style.display = "none";
-document.getElementById("comida").style.display = "block";
-document.getElementById("extra").style.display = "block";
-document.getElementById("actividad").style.display = "none";
+  document.getElementById("hospedaje").style.display = "none";
+  document.getElementById("comida").style.display = "block";
+  document.getElementById("extra").style.display = "block";
+  document.getElementById("actividad").style.display = "none";
 }
 
 function Mostrar_a(){
-document.getElementById("hospedaje").style.display = "none";
-document.getElementById("comida").style.display = "none";
-document.getElementById("actividad").style.display = "block";
-document.getElementById("extra").style.display = "block";
+  document.getElementById("hospedaje").style.display = "none";
+  document.getElementById("comida").style.display = "none";
+  document.getElementById("actividad").style.display = "block";
+  document.getElementById("extra").style.display = "block";
 }
 
 
@@ -100,7 +128,7 @@ function ingresarActividad()){
         var actividad = document.getElementById("actividad").value;
         var servicios = document.getElementById("servicios").value;
         var entrada = document.getElementById("entrada").value;
-   
+
         var data = '&nombre_a='+nombre_a+'&descripcion_a='+descripcion_a+'&direccion_a='+direccion_a+'&flayer_a='+flayer_a+'&enlace_a='+enlace_a+'&horario_a='+horario_a+'&actividad='+actividad+'&servicios='+servicios+'&entrada='+entrada;
 
         $.ajax({
@@ -121,3 +149,4 @@ function ingresarActividad()){
 //----------------------------------------------------------------
 //----------------------------------------------------------------
 
+*/

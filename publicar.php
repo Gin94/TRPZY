@@ -1,7 +1,7 @@
 <!--Aca se conecta por php a la BD-->
 <?php
   require("conexion.php");
-  session_start(); 
+  session_start();
 ?>
 
 <!--Inicio HTML de registro de emprendedores-->
@@ -13,42 +13,43 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"><!--Fuente de letra a utilizar-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"><!--Llamado a iconos-->
-    <script src="jquery.js"></script><!--Llamado al JQuery-->
-    <script src="publicar.js"></script>
+    <!-- <script src="jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./publicar.js"></script>
     <link rel="stylesheet" href="publicar.css">
   </head>
   <body>
-  
+
 <div class="nav">
       <div class="logo"></div>
 </div>
-    
+
 <div class="contenedor">
      <h1 style="margin:10px;">¡Publica con nosotros y aumenta tus clientes!</h1>
      <div class="opcion">
          <h3>¿Qué quieres publicar?</h3>
          <br>
-         <input type="button" value="Hospedaje" id="btn-opc" onclick="Mostrar_h()">
-         <input type="button" value="Lugar de Comida" id="btn-opc" onclick="Mostrar_lc()">
-         <input type="button" value="Actividad o Evento" id="btn-opc" onclick="Mostrar_a()">
+         <input type="button" value="Hospedaje" class="btnOpciones" id="btnOpcHospedaje">
+         <input type="button" value="Lugar de Comida" class="btnOpciones" id="btnOpcComida">
+         <input type="button" value="Actividad o Evento" class="btnOpciones" id="btnOpcEvento">
      </div>
-     
+
      <div class="extra-1" id="extra" >
        <h3>Quizas te puede ayudar...</h3>
         <div class="uno">
-           <p>ACA VA ALGO</p> 
+           <p>ACA VA ALGO</p>
         </div>
         <div class="uno">
             <p>Aca otra cosa.</p>
         </div>
-         
+
      </div>
-     
+
 <!--CONTENEDOR DE LOS FORMULARIOS-->
-     
+
 <!--*******************FORMULARIO DE HOSPEDAJES****************************-->
 
-<div class="hospedaje" id="hospedaje">
+<div class="boxHospedaje" id="hospedaje">
 <center><h2 style="padding:10px;">Formulario de Hospedaje.</h2></center>
 <h3 style="padding:10px;">Completa el siguiente formulario para poder publicar tu propuesta con nosotros. Los campos con (*) son obligatorios. </h3>
     <table width="90%" class="tabla">
@@ -83,7 +84,7 @@
            </tr>
            <tr>
                 <td>(*) Tipo de hospedaje:</td>
-                <td><select id="hospedaje" required> 
+                <td><select id="hospedaje" required>
                     <option value="hotel">Hotel</option>
                     <option value="hostal">Hostal</option>
                     <option value="cabana">Cabaña</option>
@@ -101,7 +102,7 @@
             </tr>
             <tr>
                 <td>(*) Servicios a ofrecer:</td>
-                <td> 
+                <td>
                   <br><br>
                    <input type="checkbox" value="estacionamiento" id="servicios">Estacionamiento
                    <input type="checkbox" value="wifi" id="servicios">Wifi
@@ -116,14 +117,14 @@
                 <td>  </td>
                 <td><br><button type="button" name="button" id="btn-1" onclick="ingresarHospedaje();">PUBLICAR</button></td>
            </tr>
-            </table>  
+            </table>
 </div>
 
 <!---------------------Funcion en ajax para guardar los datos en la BD--------------------->
 <!------------------------------------------------------------------------------------------>
 
 <!--*************************FORMULARIO DE COMIDASSS************************-->
-<div class="comida" id="comida">
+<div class="boxComida" id="comida">
 <center><h2 style="padding:10px;">Formulario de Lugar de Comida.</h2></center>
 <h3 style="padding:10px;">Completa el siguiente formulario para poder publicar tu propuesta con nosotros. Los campos con (*) son obligatorios. </h3>
     <table width="90%" class="tabla">
@@ -161,7 +162,7 @@
            </tr>
            <tr>
                 <td>(*) Tipo de lugar:</td>
-                <td><select id="lugar" required> 
+                <td><select id="lugar" required>
                     <option value="restaurant">Restaurant</option>
                     <option value="picada">Picada</option>
                     <option value="te">Salon de té</option>
@@ -183,7 +184,7 @@
             </tr>
             <tr>
                 <td>(*) Servicios a ofrecer:</td>
-                <td> 
+                <td>
                   <br>
                    <input type="checkbox" value="estacionamiento" id="servicios">Estacionamiento
                    <input type="checkbox" value="acceso" id="servicios">Acceso discapacitados
@@ -197,10 +198,10 @@
            </tr>
     </table>
 </div>
-         
+
 <!--DESDE ACACOMIENZAS A EDITAR DE NUEVO!!!!!!!!!!!!!!!1-->
 <!--*********************FORMULARIO DE ACTIVIDADES*********************-->
-<div class="actividad" id="actividad">
+<div class="boxActividad" id="actividad">
 <center><h2 style="padding:10px;">Formulario de Actividad o Evento.</h2></center>
 <h3 style="padding:10px;">Completa el siguiente formulario para poder publicar tu propuesta con nosotros. Los campos con (*) son obligatorios. </h3>
     <table width="90%" class="tabla">
@@ -231,7 +232,7 @@
            </tr>
            <tr>
                 <td>(*) Tipo de actividad o evento:</td>
-                <td><select name="tipo_h" required> 
+                <td><select name="tipo_h" required>
                     <option value="concierto">Concierto</option>
                     <option value="deportivo">Deportivo</option>
                     <option value="aire_libre">Aire Libre</option>
@@ -241,14 +242,14 @@
             </tr>
            <tr>
                 <td>(*) Entrada:</td>
-                <td><select name="entrada" required> 
+                <td><select name="entrada" required>
                     <option value="libre">Libre</option>
                     <option value="pagada">Pagada</option>
                 </select></td>
             </tr>
             <tr>
                 <td>(*) Servicios a ofrecer:</td>
-                <td> 
+                <td>
                   <br><br>
                    <input type="checkbox" value="estacionamiento">Estacionamiento
                    <input type="checkbox" value="comida">Sección comida
@@ -268,7 +269,7 @@
     </table>
 </div>
 </div><!--------------------final contenedor---------------------------------------------->
-     
+
 
 <div class="footer">
       <div class="footer_box">

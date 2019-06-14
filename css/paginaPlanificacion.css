@@ -109,3 +109,34 @@
   background-color: white;
   color: #5F002F;
 }
+/* Ruta */
+.ruta{
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+.slider{}
+.circulo{
+  display: inline-block;
+  background-color: #900048;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.in_circulo{
+  background-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 90px;
+}
+#hojaUno{
+  background-color: #900048;
+}

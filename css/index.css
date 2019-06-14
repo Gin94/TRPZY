@@ -219,8 +219,8 @@
   background-color: #ffe3ef;
   width: 60%;
   height: 200px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -236,6 +236,7 @@
   float: left;
   width: 400px;
   height: 200px;
+  border-radius: 10px;
 }
 .btn_box{
   float: right;

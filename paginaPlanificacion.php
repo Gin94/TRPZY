@@ -1,3 +1,8 @@
+<?php
+
+
+  $_GET['id'] = $nombreCiudad;
+ ?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -35,6 +40,24 @@
         </div>
       </div>
     </div>
+    <!-- ruta y slider -->
+    <div class="ruta"><a href="#">PaginaPrincipal</a>/<a href="#">Destino</a>/<a href="#">Hospedaje</a>/<a href="#">Comida</a>/<a href="#">Evento</a></div>
+    <center>
+      <div class="slider">
+        <div class="circulo">
+          <div id="hojaUno" class="in_circulo"></div>
+        </div>
+        <div class="circulo">
+          <div id="hojaDos" class="in_circulo"></div>
+        </div>
+        <div class="circulo">
+          <div id="hojaTres" class="in_circulo"></div>
+        </div>
+        <div class="circulo">
+          <div id="hojaCuatro" class="in_circulo"></div>
+        </div>
+      </div>
+    </center>
     <!-- principal -->
     <div class="panel_planificacion"></div>
     <!-- contenido viajes -->

@@ -88,8 +88,7 @@
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
         <a id="btnUrl" href="paginaPlanificacion.php?id=santiago"><button type="button" class="btn_box" >Planificar</button></a>
       </div>
       <div class="segunda fila">
@@ -99,7 +98,7 @@
           <div id="tacna" class="box">Tacna</div>
         </center>
       </div>
-      <div class="panel_informacion infoDos"></div>
+      <!-- <div class="panel_informacion infoDos"></div> -->
       <div class="tercera fila">
         <center>
           <div id="lasvegas" class="box">Las Vegas</div>
@@ -107,7 +106,7 @@
           <div id="newyork" class="box">New Yrok</div>
         </center>
       </div>
-      <div class="panel_informacion infoTres"></div>
+      <!-- <div class="panel_informacion infoTres"></div> -->
     </div>
     <!-- contenido ranking -->
     <div class="contenido_ranking"></div>

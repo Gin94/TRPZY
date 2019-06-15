@@ -23,7 +23,7 @@
   display: inline-block;
 }
 .logo{
-  background-image: url("/source/logo_white.png");
+  background-image: url("../sources/logo_black.png");
   background-size: cover;
   width: 222px;
   height: 50px;
@@ -59,20 +59,19 @@
 
 .btn{
   width: 96%;
-  height: 30px;
   background-color: green;
   margin: 6px;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px;
 }
 
-input:hover{
+/*input:hover{
   background-color: yellow;
-}
+}*/
 
-#btn:hover{
+/*#btn:hover{
   background-color: yellow;
-}
+}*/
 
 .info{
   width: 66%;
@@ -113,7 +112,7 @@ input:hover{
   color: #900048;
 }
 .footer_logo{
-  background-image: url("/source/logo_1.png");
+  background-image: url("../sources/logo_1.png");
   background-size: cover;
   width: 80px;
   height: 80px;

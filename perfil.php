@@ -23,27 +23,13 @@
         <h1 style="text-align: center;">Nombre del usuario</h1>
         <hr style="margin: 10px;">
         <input type="button" value="Mi Informacion" class="btn">
-
-        <div class="btn" id="btn-1">
-          <h3>Mi informacion</h3>
-        </div>
-        <div class="btn" id="btn">
-          <h3>Mis viajes</h3>
-        </div>
-        <div class="btn">
-          <h3>Mis viajes en espera</h3>
-        </div>
-        <div class="btn">
-          <h3>Planificar</h3>
-        </div>
-        <div class="btn">
-          <h3>Configuración/Ajustes</h3>
-        </div>
-        <div class="btn">
-          <h3>Publicar</h3>
-        </div>
-  
+        <input type="button" value="Mis Viajes" class="btn">
+        <input type="button" value="Mis Viajes en espera" class="btn">
+        <input type="button" value="Planificar" class="btn">
+        <input type="button" value="Configuración/Ajustes" class="btn">
+        <input type="button" value="Publicar" class="btn">
       </div>
+      
       <div class="info">
         <h3>ACA SE MUESTRA TU INFORMACION</h3>
         <hr style="margin:10px;">

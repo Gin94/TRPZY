@@ -2,6 +2,7 @@
 
 
   $_GET['id'] = $nombreCiudad;
+
  ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -59,7 +60,11 @@
       </div>
     </center>
     <!-- principal -->
-    <div class="panel_planificacion"></div>
+    <div class="panel_planificacion">
+      <center>
+        
+      </center>
+    </div>
     <!-- contenido viajes -->
     <div class="panel_info_viajes"></div>
     <!-- footer -->

@@ -1,0 +1,49 @@
+//****************FUNCIONES RELACIONADAS CON EL PERFIL DEL USUARIO**********************
+$(document).ready(function(){
+  $(".boxInfo-user").hide();
+  $(".boxMis-viajes").hide();
+  $(".boxViajes-espera").hide();
+  $(".boxPlanificar").hide();
+  $(".boxConfiguracion").hide();
+
+  $("#btnInfo-user").click(function(){
+      $(".boxInfo-user").hide(200);
+      $(".boxMis-viajes").hide(200);
+      $(".boxViajes-espera").hide(200);
+      $(".boxConfiguracion").hide(200);
+      $(".boxInfo-user").toggle(200);
+  });
+  $("#btnMis-viajes").click(function(){
+      $(".boxInfo-user").hide(200);
+      $(".boxMis-viajes").hide(200);
+      $(".boxViajes-espera").hide(200);
+      $(".boxPlanificar").hide(200);
+      $(".boxConfiguracion").hide(200);
+      $(".boxMis-viajes").toggle(200);
+  });
+  $("#btnViajes-espera").click(function(){
+      $(".boxInfo-user").hide(200);
+      $(".boxMis-viajes").hide(200);
+      $(".boxViajes-espera").hide(200);
+      $(".boxPlanificar").hide(200);
+      $(".boxConfiguracion").hide(200);
+      $(".boxViajes-espera").toggle(200);
+  });
+  $("#btnPlanificar").click(function(){
+      $(".boxInfo-user").hide(200);
+      $(".boxMis-viajes").hide(200);
+      $(".boxViajes-espera").hide(200);
+      $(".boxPlanificar").hide(200);
+      $(".boxConfiguracion").hide(200);
+      $(".boxPlanificar").toggle(1000); /*algo no funciona, quiero el mensaje primero y despues que se redireccione :D */
+      location.href="paginaPlanificacion.php";
+  });
+     $("#btnConfiguracion").click(function(){
+      $(".boxInfo-user").hide(200);
+      $(".boxMis-viajes").hide(200);
+      $(".boxViajes-espera").hide(200);
+      $(".boxPlanificar").hide(200);
+      $(".boxConfiguracion").hide(200);
+      $(".boxConfiguracion").toggle(200);
+  });
+});

@@ -68,4 +68,24 @@ $(document).ready(function(){
       break;
     }
   });
+
+
+  function mostrarHospedajes(){
+    var data = '';
+    $.ajax({
+      type: 'POST',
+      url: 'jsonHospedajes.php',
+      data: data,
+      dataType: "JSON",
+      success: function(datos){
+
+        for(var i in datos){
+          $(".texto").text(datos[i].nombre_h);
+        }
+
+      }
+    });
+    return false;
+  }
+  mostrarHospedajes();
 });

@@ -207,10 +207,15 @@
   padding-bottom: 30px;
 }
 .boxFiltros{
+  float: left;
   display: inline-block;
   background-color: red;
-  width: 19%;
-  height: 1000px;
+  width: 13%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 }
 .boxHospedajes{
   display: inline-block;

@@ -23,7 +23,7 @@
   display: inline-block;
 }
 .logo{
-  background-image: url("/sources/logo_white.png");
+  background-image: url("sources/logo_white.png");
   background-size: cover;
   width: 222px;
   height: 50px;
@@ -162,7 +162,7 @@ table, th, td {
   color: #900048;
 }
 .footer_logo{
-  background-image: url("../sources/logo_1.png");
+  background-image: url("sources/logo_1.png");
   background-size: cover;
   width: 80px;
   height: 80px;

@@ -48,25 +48,27 @@ function Mostrar_a(){
   document.getElementById("actividad").style.display = "block";
   document.getElementById("extra").style.display = "block";
 }
-
+*/
 
 
 
 
 
 //Funcion ajax, Guardar en la BD los HOSPEDAJE**************************************
-function ingresarHospedaje(){
+/*function ingresarHospedaje(){
         var nombre_h = document.getElementById("nombre_h").value;
         var descripcion_h= document.getElementById("descripcion_h").value;
+        var comuna= document.getElementById("comuna").value;
         var direccion_h = document.getElementById("direccion_h").value;
         var imagen_h = document.getElementById("imagen_h").value;
         var precio_h = document.getElementById("precio_h").value;
         var enlace_h = document.getElementById("enlace_h").value;
+        var Contacto = document.getElementById("Contacto-wsp").value;
         var reserva_h = document.getElementById("reserva_h").value;
         var hospedaje = document.getElementById("hospedaje").value;
         var habitacion = document.getElementById("habitacion").value;
         var servicios = document.getElementById("servicios").value;
-        var data = '&nombre_h='+nombre_h+'&descripcion_h='+descripcion_h+'&direccion_h='+direccion_h+'&imagen_h='+imagen_h+'&precio_h='+precio_h+'&enlace_h='+enlace_h+'&reserva_h='+reserva_h+'&hospedaje='+hospedaje+'&habitacion='+habitacion+'&servicios='+servicios;
+        var data = '&nombre_h='+nombre_h+'&descripcion_h='+descripcion_h+'&comuna='+comuna+'&direccion_h='+direccion_h+'&imagen_h='+imagen_h+'&precio_h='+precio_h+'&Contacto-wsp='+Contacto+'&enlace_h='+enlace_h+'&reserva_h='+reserva_h+'&hospedaje='+hospedaje+'&habitacion='+habitacion+'&servicios='+servicios;
 
         $.ajax({
           type: 'POST',
@@ -81,8 +83,8 @@ function ingresarHospedaje(){
           }
         });
         return false;
-      }
-//----------------------------------------------------------------
+      }*/
+/*----------------------------------------------------------------
 //----------------------------------------------------------------
 //Funcion ajax, Guardar en la BD los LUGAS DE COMIDA**************************************
 function ingresarLugar()){

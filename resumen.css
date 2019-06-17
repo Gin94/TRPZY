@@ -1,6 +1,7 @@
 /*--------------------------------------Fondo-Web----------------------------------*/
 *{
   margin: 0;
+    font-family: Raleway;
 }
 /*--------------------------------------Barra Scroll-------------------------------*/
 ::-webkit-scrollbar{
@@ -22,7 +23,7 @@
   display: inline-block;
 }
 .logo{
-  background-image: url("source/logo_white.png");
+  background-image: url("sources/logo_white.png");
   background-size: cover;
   width: 222px;
   height: 50px;
@@ -43,19 +44,22 @@
 .resumen{
     padding: 15px;
     width: 100%;
-    
 }
 
 .mapa{
     margin: 5px;
     padding: 10px;
     width: 95%;
-    background-color: antiquewhite;
+    border-style:solid;
+    border-color: #5F002F;
+    border-radius: 20px;
 }
 
 .mapa-1{
     margin: 30px;
     display: inline-block;
+    border-style:solid;
+    border-color: #5F002F;
 }
 
 /*.reco{
@@ -80,7 +84,9 @@
     margin: 5px;
     padding: 10px;
     width: 95%;
-    background-color: antiquewhite;
+    border-style:solid;
+    border-color: #5F002F;
+    border-radius: 20px;
 }
 
 .tabla{
@@ -89,6 +95,7 @@
     border-collapse: collapse;
     width: 80%;
     margin-left: 50px;
+    color: #5F002F;
 }
 
 table, td, th {
@@ -96,24 +103,27 @@ table, td, th {
   padding: 5px;
 }
 
-#btn-1{
-    height: 40%;
-    background-color: #900048;
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
-    margin-bottom: 10px;
+.btn-1{
+  background-color: #5F002F;
+  width: 90%;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 100px;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
 }
-
-#btn-1:hover{
-    background-color: white;
-    color: #900048;
+.btn-1:hover{
+  background-color: white;
+  color: #5F002F;
 }
 
 .boton{
     margin-left: 80%;
 }
-
 
    /* background-color: #900048;*/
 
@@ -143,7 +153,7 @@ table, td, th {
   color: #900048;
 }
 .footer_logo{
-  background-image: url("source/logo_1.png");
+  background-image: url("sources/logo_1.png");
   background-size: cover;
   width: 80px;
   height: 80px;

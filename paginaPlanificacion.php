@@ -1,9 +1,9 @@
 <?php
-
-
-  $_GET['id'] = $nombreCiudad;
+  require("conexion.php");
+  $nombreCiudad = $_GET['id'];
 
  ?>
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -13,9 +13,12 @@
     <!-- Font y jquery -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- estilos y funciones de esta pagina -->
     <link rel="stylesheet" href="./css/paginaPlanificacion.css">
-    <script src="./js/paginaPlanificacion.js"></script>
+    <script src="paginaPlanificacion.js"></script>
 
   </head>
   <body>
@@ -61,9 +64,23 @@
     </center>
     <!-- principal -->
     <div class="panel_planificacion">
-      <center>
+      <!-- Hoja1 destino -->
+      <div class="hoja1">
+        <p>Destino:</p>
+        <h1><?php echo $nombreCiudad; ?></h1>
+        <center>
+          <h2>Selecciona una fecha de viaje:</h2>
+          <div class="boxFecha">Desde-Hasta:</div>
+          <input type="text" class="inputFecha" id="fechaInicio" value="" placeholder="día-mes-año">
+        </center>
+        <div class="boxBoton">
+          <button type="button" id="btnSiguiente">Siguiente</button>
+        </div>
+      </div>
+      <!-- Hoja2 hospedaje -->
+      <div class="hoja2">
         
-      </center>
+      </div>
     </div>
     <!-- contenido viajes -->
     <div class="panel_info_viajes"></div>

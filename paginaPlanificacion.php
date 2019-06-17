@@ -73,14 +73,34 @@
           <div class="boxFecha">Desde-Hasta:</div>
           <input type="text" class="inputFecha" id="fechaInicio" value="" placeholder="día-mes-año">
         </center>
-        <div class="boxBoton">
-          <button type="button" id="btnSiguiente">Siguiente</button>
-        </div>
       </div>
       <!-- Hoja2 hospedaje -->
       <div class="hoja2">
-        
+        <h1>Selecciona tu hospedaje:</h1>
+
+        <table>
+          <tr>
+            <div class="boxFiltros">
+              <p><input type="checkbox" value=""> Hostal</p>
+            </div>
+          </tr>
+          <tr>
+            <div class="boxHospedajes"></div>
+          </tr>
+        </table>
+        <center>
+
+        </center>
       </div>
+    </div>
+    <!-- Hoja3 comidas -->
+    <div class="hoja3"></div>
+    <!-- Hoja4 eventos -->
+    <div class="hoja4"></div>
+    <!-- botonera -->
+    <div class="boxBoton">
+      <button type="button" class="btnEstilo" id="btnAnterior">Anterior</button>
+      <button type="button" class="btnEstilo" id="btnSiguiente">Siguiente</button>
     </div>
     <!-- contenido viajes -->
     <div class="panel_info_viajes"></div>

@@ -141,6 +141,10 @@
   background-color: #900048;
 }
 /* panel planificaicon */
+/* hoja1 */
+.hoja1{
+  display: block;
+}
 .panel_planificacion{
   width: 90%;
   padding-left: 5%;
@@ -192,8 +196,33 @@
   height: 30px;
   padding: 10px;
 }
-#btnSiguiente{
-  float: right;
+/* hoja2 */
+.hoja2{
+  display: none;
+  background-color: gray;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.boxFiltros{
+  display: inline-block;
+  background-color: red;
+  width: 19%;
+  height: 1000px;
+}
+.boxHospedajes{
+  display: inline-block;
+  margin-left: 2%;
+  width: 78%;
+  height: 1000px;
+  background-color: white;
+}
+/* Botoneras */
+.btnEstilo{
+  margin-left: 5%;
+  margin-right: 5%;
   width: 150px;
   height: 30px;
   border: 1px solid #900048;
@@ -205,7 +234,15 @@
   cursor: pointer;
   transition: 0.5s;
 }
-#btnSiguiente:hover{
+.btnEstilo:hover{
   background-color: #900048;
   color: white;
+}
+#btnSiguiente{
+  float: right;
+  display: block;
+}
+#btnAnterior{
+  float: left;
+  display: block;
 }

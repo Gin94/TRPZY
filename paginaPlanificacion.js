@@ -78,9 +78,10 @@ $(document).ready(function(){
       data: data,
       dataType: "JSON",
       success: function(datos){
+        var filas = document.getElementById("texto");
 
         for(var i in datos){
-          $(".texto").text(datos[i].nombre_h);
+          filas.innerHTML += "<tr><td>"+datos[i].nombre_h+"</td><td>"+datos[i].hospedaje_id+"</td></tr>";
         }
 
       }

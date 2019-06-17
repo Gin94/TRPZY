@@ -77,45 +77,39 @@
       <!-- Hoja2 hospedaje -->
       <div class="hoja2">
         <h1>Selecciona tu hospedaje:</h1>
-        <table>
-          <tr>
-            <div class="boxFiltros">
-              <div class="hospedaje">
-                <h4>Tipo de Hospedaje:</h4>
-                <br>
-                <p><input type="radio" name="tipoHospedaje" value=""> Hotel</p>
-                <p><input type="radio" name="tipoHospedaje" value=""> Hostal</p>
-                <p><input type="radio" name="tipoHospedaje" value=""> Cabaña</p>
-                <p><input type="radio" name="tipoHospedaje" value=""> Departamento</p>
-                <p><input type="radio" name="tipoHospedaje" value=""> Casa</p>
-              </div>
-              <div class="habitaciones">
-                <h4>Cantidad habitaciones:</h4>
-                <br>
-                <select class="" name="">
-                  <option value="">1 habitacion</option>
-                  <option value="">2 habitacion</option>
-                  <option value="">3 habitacion</option>
-                  <option value="">4+ habitacion</option>
-                </select>
-              </div>
-            </div>
-          </tr>
-          <tr>
-            <div class="boxHospedajes">
-              <table>
-                <tr>
-                  <th>Nombre</th>
-                  <th>id</th>
-                </tr>
-                <tr>
-                  <td></td>
-                </tr>
-              </table>
-              <h1 class="texto"></h1>
-            </div>
-          </tr>
-        </table>
+        <div class="boxFiltros">
+          <div class="hospedaje">
+            <h4>Tipo de Hospedaje:</h4>
+            <br>
+            <p><input type="radio" name="tipoHospedaje" value=""> Hotel</p>
+            <p><input type="radio" name="tipoHospedaje" value=""> Hostal</p>
+            <p><input type="radio" name="tipoHospedaje" value=""> Cabaña</p>
+            <p><input type="radio" name="tipoHospedaje" value=""> Departamento</p>
+            <p><input type="radio" name="tipoHospedaje" value=""> Casa</p>
+          </div>
+          <div class="habitaciones">
+            <h4>Cantidad habitaciones:</h4>
+            <br>
+            <select class="" name="">
+              <option value="">1 habitacion</option>
+              <option value="">2 habitacion</option>
+              <option value="">3 habitacion</option>
+              <option value="">4+ habitacion</option>
+            </select>
+          </div>
+        </div>
+        <div class="boxHospedajes">
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>id</th>
+              </tr>
+            </thead>
+            <tbody id="texto">
+            </tbody>
+          </table>
+        </div>
         <center>
 
         </center>

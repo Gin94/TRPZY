@@ -49,7 +49,7 @@ $(".infoUno").hide();
     else{
       $(".infoUno").show(200);
       $(".imgInfo").attr("src", "./sources/destinos/concepcion.jpg");
-      $("#btnUrl").attr("href", "paginaPlanificacion.php?id=concepcion");
+      $("#btnUrl").attr("href", "paginaPlanificacion.php?id=concepción");
       show = 'concepcion';
       open = true;
     }
@@ -62,7 +62,7 @@ $(".infoUno").hide();
     else{
       $(".infoUno").show(200);
       $(".imgInfo").attr("src", "./sources/destinos/losangeles.jpg");
-      $("#btnUrl").attr("href", "paginaPlanificacion.php?id=losangeles");
+      $("#btnUrl").attr("href", "paginaPlanificacion.php?id=losángeles");
       show = 'losangeles';
       open = true;
     }

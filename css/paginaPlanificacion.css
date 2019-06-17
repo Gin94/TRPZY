@@ -140,3 +140,72 @@
 #hojaUno{
   background-color: #900048;
 }
+/* panel planificaicon */
+.panel_planificacion{
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.panel_planificacion h1{
+  font-size: 50px;
+  color: #900048;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.panel_planificacion h2{
+  font-size: 18px;
+  color: #900048;
+  margin-bottom: 30px;
+}
+.boxFecha{
+  display: inline-block;
+  background-color: #900048;
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 5px;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.inputFecha{
+  display: inline-block;
+  background-color: #F4E7ED;
+  margin-left: -3px;
+  border: 1px solid #900048;
+  outline: none;
+  width: 180px;
+  height: 38px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  cursor: pointer;
+}
+.boxBoton{
+  height: 30px;
+  padding: 10px;
+}
+#btnSiguiente{
+  float: right;
+  width: 150px;
+  height: 30px;
+  border: 1px solid #900048;
+  color: #900048;
+  outline: none;
+  border-radius: 20px;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#btnSiguiente:hover{
+  background-color: #900048;
+  color: white;
+}

@@ -217,12 +217,12 @@
 }
 .panel_informacion{
   background-color: #ffe3ef;
-  width: 60%;
+  width: 80%;
   height: 200px;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .textoInfo p{
   color: #900048;

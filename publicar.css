@@ -22,6 +22,7 @@
   position: fixed;
   display: inline-block;
 }
+
 .logo{
   background-image: url("sources/logo_white.png");
   background-size: cover;

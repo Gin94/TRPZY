@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="publicar.css">
   </head>
   <body>
-
+ 
 <div class="nav">
       <div class="logo"></div>
 </div>
@@ -92,7 +92,7 @@
          <td><select id="hospedaje" required>
              <option value="hotel">Hotel</option>
              <option value="hostal">Hostal</option>
-             <option value="cabana">Cabaña</option>
+             <option id="hospedaje" value="cabana">Cabaña</option>
              <option value="departamento">Departamento</option>
              <option value="casa">Casa</option>
          </select></td>
@@ -100,22 +100,22 @@
      <tr><!--ACA DEBO SACAR EL VALUE!!!!-->
          <td>(*) Tipos de habitaciones:</td>
          <td> <br><br>
-            <input type="checkbox" value="simple" id="habitacion">Simple
-            <input type="checkbox" value="doble" id="habitacion">Doble
-            <input type="checkbox" value="matrimonial" id="habitacion">Matrimonial
+            <label><input type="checkbox" name="opcion[]" value="simple" >Simple</label>
+            <label><input type="checkbox" name="opcion[]" id="habitacion" value="doble" >Doble</label>
+            <label><input type="checkbox" name="opcion[]" value="matrimonial" >Matrimonial</label>
          </td>
      </tr>
      <tr>
          <td>(*) Servicios a ofrecer:</td>
          <td>
            <br><br>
-            <input type="checkbox" value="estacionamiento" id="servicios">Estacionamiento
-            <input type="checkbox" value="wifi" id="servicios">Wifi
-            <input type="checkbox" value="mascota" id="servicios">Acepta mascotas
+            <label><input type="checkbox" name="opcion2[]" value="estacionamiento" >Estacionamiento</label>
+            <label><input type="checkbox" name="opcion2[]" id="servicios" value="wifi" >Wifi</label>
+            <label><input type="checkbox" name="opcion2[]" id="servicios" value="mascota" >Acepta mascotas</label>
             <br>
-            <input type="checkbox" value="acceso" id="servicios">Acceso discapacitados
-            <input type="checkbox" value="lavanderia" id="servicios">Lavanderia
-            <input type="checkbox" value="otros" id="servicios">Otros
+            <label><input type="checkbox" name="opcion2[]" value="acceso" >Acceso discapacitados</label>
+            <label><input type="checkbox" name="opcion2[]" value="lavanderia" >Lavanderia</label>
+            <label><input type="checkbox" name="opcion2[]" value="otros" >Otros</label>
          </td>
      </tr>
      <tr>
@@ -140,6 +140,7 @@
         var hospedaje = document.getElementById("hospedaje").value;
         var habitacion = document.getElementById("habitacion").value;
         var servicios = document.getElementById("servicios").value;
+        
         var data = '&nombre_h='+nombre_h+'&descripcion_h='+descripcion_h+'&comuna='+comuna+'&direccion_h='+direccion_h+'&imagen_h='+imagen_h+'&precio_h='+precio_h+'&Contacto-wsp='+Contacto+'&enlace_h='+enlace_h+'&reserva_h='+reserva_h+'&hospedaje='+hospedaje+'&habitacion='+habitacion+'&servicios='+servicios;
 
         $.ajax({

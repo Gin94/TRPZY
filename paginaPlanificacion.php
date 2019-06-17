@@ -102,8 +102,9 @@
           <table>
             <thead>
               <tr>
-                <th>Nombre</th>
                 <th>id</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
               </tr>
             </thead>
             <tbody id="texto">

@@ -81,7 +81,7 @@ $(document).ready(function(){
         var filas = document.getElementById("texto");
 
         for(var i in datos){
-          filas.innerHTML += "<tr><td>"+datos[i].nombre_h+"</td><td>"+datos[i].hospedaje_id+"</td></tr>";
+          filas.innerHTML += "<tr><td>"+datos[i].hospedaje_id+"</td><td>"+datos[i].nombre_h+"</td><td>"+datos[i].descripcion_h+"</td></tr>";
         }
 
       }

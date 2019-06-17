@@ -100,9 +100,9 @@
      <tr><!--ACA DEBO SACAR EL VALUE!!!!-->
          <td>(*) Tipos de habitaciones:</td>
          <td> <br><br>
-            <label><input type="checkbox" name="opcion[]" value="simple" >Simple</label>
+            <label><input type="checkbox" name="opcion[]" id="habitacion" value="simple" >Simple</label>
             <label><input type="checkbox" name="opcion[]" id="habitacion" value="doble" >Doble</label>
-            <label><input type="checkbox" name="opcion[]" value="matrimonial" >Matrimonial</label>
+            <label><input type="checkbox" name="opcion[]" id="habitacion" value="matrimonial" >Matrimonial</label>
          </td>
      </tr>
      <tr>

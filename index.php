@@ -64,7 +64,7 @@
     <!-- principal -->
     <div class="panel_principal">
       <center>
-        <a href="paginaPlanificacion.php"><button type="button" class="btn_planificacion">Comienza a planificar</button></a>
+        <a href="paginaPlanificacion.php?id=santiago"><button type="button" class="btn_planificacion">Comienza a planificar</button></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </center>
     </div>
@@ -110,8 +110,54 @@
     </div>
     <!-- contenido ranking -->
     <div class="contenido_ranking"></div>
+    
+    
     <!-- footer -->
-    <div class="footer"></div>
-
+<div class="footer">
+      <div class="footer_box">
+        <center>
+        <div class="footer_logo"></div>
+        </center>
+        <div class="fl_txt">Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Quod rerum voluptas
+          alias id possimus cupiditate nihil cumque culpa
+          beatae neque</div>
+      </div>
+      <div class="footer_box">
+        <center>
+        <h3>Contáctenos</h3>
+        <br><br>
+        <a href="">Whastapp</a>
+        <br><br>
+        <a href="">Facebook</a>
+        <br><br>
+        <a href="">Twitter</a>
+        <br><br>
+        <a href="">Instagram</a>
+        </center>
+      </div>
+      <div class="footer_box">
+        <center>
+        <h3>Navegación</h3>
+        <br><br>
+        <a href="">Inicio</a>
+        <br><br>
+        <a href="">Destinos</a>
+        <br><br>
+        <a href="">Destinos de Usuarios</a>
+        </center>
+      </div>
+      <div class="footer_box">
+        <center>
+        <h3>Soporte</h3>
+        <br><br>
+        <a href="">Preguntas Frecuentes</a>
+        <br><br>
+        <a href="">Contacto Desarrollador</a>
+        <br><br>
+        <a href="">Reportar un Error</a>
+        </center>
+      </div>
+      </div>
   </body>
 </html>

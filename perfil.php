@@ -29,7 +29,7 @@
         <input type="button" value="Mis Viajes en espera" class="btn" id="btnViajes-espera">
         <input type="button" value="Planificar" class="btn" id="btnPlanificar">
         <input type="button" value="Configuración/Ajustes" class="btn" id="btnConfiguracion">
-        <input type="button" value="Publicar" class="btn">
+        <a href="publicar.php"><button class="btn">Publicar</button></a>
 <!--        <div style="display:inline-block;">
             <i class="material-icons" id="cand">https</i>
         </div>-->

@@ -38,7 +38,7 @@
       </div>
       
       <div class="info">
-        <h3>ACA SE MUESTRA TU INFORMACION</h3>
+        <h3>Bienvenid@:...</h3>
         <hr style="margin:10px;">
             <div class="boxInfo-user">
                     <h3>INFORMACION DEL USUARIO</h3>

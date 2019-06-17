@@ -15,11 +15,11 @@
       rel="stylesheet"><!--Llamado a iconos-->
     <!-- <script src="jquery.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="./publicar.js"></script>
+    <script src="publicar.js"></script>
     <link rel="stylesheet" href="publicar.css">
   </head>
   <body>
-
+ 
 <div class="nav">
       <div class="logo"></div>
 </div>
@@ -48,7 +48,7 @@
 <!--*******************FORMULARIO DE HOSPEDAJES****************************-->
 
 <div class="boxHospedaje" id="hospedaje">
-  <center><h2 style="padding:10px;">Formulario de Hospedaje.</h2></center>
+  <center><h2 style="padding:10px;">Formulario de Hospedaje.<i class="material-icons">assignment</i></h2></center>
   <h3 style="padding:10px;">Completa el siguiente formulario para poder publicar tu propuesta con nosotros. Los campos con (*) son obligatorios. </h3>
   <table width="90%" class="tabla">
     <tr>
@@ -59,9 +59,13 @@
          <td>(*) Descripcion:</td>
          <td><textarea size="30%" id="descripcion_h" cols="60" rows="10" placeholder="Incluye lugares cercanos, ambiente, condiciones llegada y salida, etc." required></textarea></td>
     </tr>
+    <tr>
+         <td>(*) Comuna:</td>
+         <td><input size="30%" type="text" id="comuna" required></td>
+    </tr>
      <tr>
          <td>(*) Dirección:</td>
-         <td><input size="30%" type="text" id="direccion_h"></td>
+         <td><input size="30%" type="text" id="direccion_h" required></td>
     </tr>
      <tr>
          <td>(*) Imagen</td>
@@ -69,12 +73,15 @@
     </tr>
      <tr>
          <td>(*) Precio:</td>
-         <td><input size="30%" type="text" id="precio_h" placeholder="precio base de una habitacion"></td>
+         <td><input size="30%" type="text" id="precio_h" placeholder="precio base de una habitacion" required></td>
     </tr>
-
-      <tr>
+    <tr>
          <td>Enlace Página Web:</td>
          <td><input size="30%" type="text" id="enlace_h"></td>
+    </tr>
+    <tr>
+         <td>Contacto-Wsp:</td>
+         <td><input size="30%" type="text" id="Contacto-wsp" placeholder="+569xxxxxxxx"></td>
     </tr>
       <tr>
          <td>(*) Reserva:</td>
@@ -85,7 +92,7 @@
          <td><select id="hospedaje" required>
              <option value="hotel">Hotel</option>
              <option value="hostal">Hostal</option>
-             <option value="cabana">Cabaña</option>
+             <option id="hospedaje" value="cabana">Cabaña</option>
              <option value="departamento">Departamento</option>
              <option value="casa">Casa</option>
          </select></td>
@@ -93,22 +100,22 @@
      <tr><!--ACA DEBO SACAR EL VALUE!!!!-->
          <td>(*) Tipos de habitaciones:</td>
          <td> <br><br>
-            <input type="checkbox" value="simple" id="habitacion">Simple
-            <input type="checkbox" value="doble" id="habitacion">Doble
-            <input type="checkbox" value="matrimonial" id="habitacion">Matrimonial
+            <label><input type="checkbox" name="opcion[]" value="simple" >Simple</label>
+            <label><input type="checkbox" name="opcion[]" id="habitacion" value="doble" >Doble</label>
+            <label><input type="checkbox" name="opcion[]" value="matrimonial" >Matrimonial</label>
          </td>
      </tr>
      <tr>
          <td>(*) Servicios a ofrecer:</td>
          <td>
            <br><br>
-            <input type="checkbox" value="estacionamiento" id="servicios">Estacionamiento
-            <input type="checkbox" value="wifi" id="servicios">Wifi
-            <input type="checkbox" value="mascota" id="servicios">Acepta mascotas
+            <label><input type="checkbox" name="opcion2[]" value="estacionamiento" >Estacionamiento</label>
+            <label><input type="checkbox" name="opcion2[]" id="servicios" value="wifi" >Wifi</label>
+            <label><input type="checkbox" name="opcion2[]" id="servicios" value="mascota" >Acepta mascotas</label>
             <br>
-            <input type="checkbox" value="acceso" id="servicios">Acceso discapacitados
-            <input type="checkbox" value="lavanderia" id="servicios">Lavanderia
-            <input type="checkbox" value="otros" id="servicios">Otros
+            <label><input type="checkbox" name="opcion2[]" value="acceso" >Acceso discapacitados</label>
+            <label><input type="checkbox" name="opcion2[]" value="lavanderia" >Lavanderia</label>
+            <label><input type="checkbox" name="opcion2[]" value="otros" >Otros</label>
          </td>
      </tr>
      <tr>
@@ -119,11 +126,45 @@
 </div>
 
 <!---------------------Funcion en ajax para guardar los datos en la BD--------------------->
+<script type="text/javascript">
+    function ingresarHospedaje(){
+        var nombre_h = document.getElementById("nombre_h").value;
+        var descripcion_h= document.getElementById("descripcion_h").value;
+        var comuna= document.getElementById("comuna").value;
+        var direccion_h = document.getElementById("direccion_h").value;
+        var imagen_h = document.getElementById("imagen_h").value;
+        var precio_h = document.getElementById("precio_h").value;
+        var enlace_h = document.getElementById("enlace_h").value;
+        var Contacto = document.getElementById("Contacto-wsp").value;
+        var reserva_h = document.getElementById("reserva_h").value;
+        var hospedaje = document.getElementById("hospedaje").value;
+        var habitacion = document.getElementById("habitacion").value;
+        var servicios = document.getElementById("servicios").value;
+        
+        var data = '&nombre_h='+nombre_h+'&descripcion_h='+descripcion_h+'&comuna='+comuna+'&direccion_h='+direccion_h+'&imagen_h='+imagen_h+'&precio_h='+precio_h+'&Contacto-wsp='+Contacto+'&enlace_h='+enlace_h+'&reserva_h='+reserva_h+'&hospedaje='+hospedaje+'&habitacion='+habitacion+'&servicios='+servicios;
+
+        $.ajax({
+          type: 'POST',
+          url: 'guardar_hospedaje.php',
+          data: data,
+          beforseSend: function(){
+            console.log(data);
+          },
+          success: function(){
+            console.log(data);
+           // location.reload();
+          }
+        });
+        return false;
+      }
+    
+    </script>
+
 <!------------------------------------------------------------------------------------------>
 
 <!--*************************FORMULARIO DE COMIDASSS************************-->
 <div class="boxComida" id="comida">
-<center><h2 style="padding:10px;">Formulario de Lugar de Comida.</h2></center>
+<center><h2 style="padding:10px;">Formulario de Lugar de Comida.<i class="material-icons">assignment</i></h2></center>
 <h3 style="padding:10px;">Completa el siguiente formulario para poder publicar tu propuesta con nosotros. Los campos con (*) son obligatorios. </h3>
     <table width="90%" class="tabla">
            <tr>
@@ -135,8 +176,12 @@
                 <td><textarea size="30%" id="descripcion_c" cols="60" rows="10" placeholder="Incluye lugares cercanos, ambiente, condiciones llegada y salida, etc." required></textarea></td>
            </tr>
             <tr>
+                <td>(*) Comuna:</td>
+                <td><input size="30%" type="text" id="comuna" required></td>
+           </tr>
+            <tr>
                 <td>(*) Dirección:</td>
-                <td><input size="30%" type="text" id="direccion_c"></td>
+                <td><input size="30%" type="text" id="direccion_c" required></td>
            </tr>
             <tr>
                 <td>(*) Imagen</td>
@@ -144,11 +189,15 @@
            </tr>
             <tr>
                 <td>(*) Precio:</td>
-                <td><input size="30%" type="text" id="precio_c" placeholder="Precio base de una habitacion"></td>
+                <td><input size="30%" type="text" id="precio_c" placeholder="Precio base de una habitacion" required></td>
            </tr>
            <tr>
                 <td>(*) Horario de Atención:</td>
                 <td><input size="30%" type="text" id="horario_c" required></td>
+           </tr>
+           <tr>
+                <td>Contacto-Wsp:</td>
+                <td><input size="30%" type="text" id="Contacto-wsp" placeholder="+569xxxxxx"></td>
            </tr>
            <tr>
                 <td>Enlace Página Web:</td>
@@ -200,7 +249,7 @@
 <!--DESDE ACACOMIENZAS A EDITAR DE NUEVO!!!!!!!!!!!!!!!1-->
 <!--*********************FORMULARIO DE ACTIVIDADES*********************-->
 <div class="boxActividad" id="actividad">
-<center><h2 style="padding:10px;">Formulario de Actividad o Evento.</h2></center>
+<center><h2 style="padding:10px;">Formulario de Actividad o Evento.<i class="material-icons">assignment</i></h2></center>
 <h3 style="padding:10px;">Completa el siguiente formulario para poder publicar tu propuesta con nosotros. Los campos con (*) son obligatorios. </h3>
     <table width="90%" class="tabla">
         <form action="guardar.php" method="post" enctype="multipart/form-data">
@@ -213,8 +262,12 @@
                 <td><textarea size="30%" name="descripcion" id="" cols="60" rows="10" placeholder="Incluye tema a tratar, demostracion o exposicion, etc." required></textarea></td>
            </tr>
             <tr>
+                <td>(*) Comuna:</td>
+                <td><input size="30%" type="text" name="comuna" required></td>
+           </tr>
+            <tr>
                 <td>(*) Dirección:</td>
-                <td><input size="30%" type="text" name="direccion"></td>
+                <td><input size="30%" type="text" name="direccion" required></td>
            </tr>
             <tr>
                 <td>(*) Flayer</td>
@@ -225,8 +278,12 @@
                 <td><input size="30%" type="text" name="enlace" placeholder="Desde - Hasta (xx:xx - xx:xx)" required></td>
            </tr>
            <tr>
+                <td>Contacto-Wsp:</td>
+                <td><input size="30%" type="text" name="Contacto-wsp" placeholder="+569xxxxxxx"></td>
+           </tr>
+           <tr>
                 <td>Enlace Página Web:</td>
-                <td><input size="30%" type="text" name="enlace"></td>
+                <td><input size="30%" type="text" name="enlace" placeholder="www.hola.cl"></td>
            </tr>
            <tr>
                 <td>(*) Tipo de actividad o evento:</td>

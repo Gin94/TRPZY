@@ -16,10 +16,10 @@
 </div>
     
 <div class="contenedor">
-    <h1 style="margin:20px;">Acá está el resumen de tu planificación.</h1>
-    <div class="resumen">
+    <h1 style="margin:20px; color:#5F002F;">Acá está el resumen de tu planificación.</h1>
+    <div class="resumen"> 
         <div class="mapa">
-            <h3>A continución se muestra el resumen de tus lugares ubicados en el mapa.</h3>
+            <h3 style="color:#5F002F;">A continución se muestra el resumen de tus lugares ubicados en el mapa.</h3>
             <!--<center>-->
                 <div class="mapa-1">
                      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12779.777600291152!2d-73.11419768022459!3d-36.79588344999999!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1540176802102" width="580" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
@@ -31,7 +31,7 @@
                 </div>
         </div> 
         <div class="lugares">
-            <p>Resumen informativo de tu próximo viaje.</p>
+            <p style="color:#900048;">Resumen informativo de tu próximo viaje.</p>
                 <table class="tabla">
                     <tr>
                         <th>Lugar</th>
@@ -59,7 +59,7 @@
                     </tr>
                 </table>
         <div class="boton">  
-        <br><button type="button" name="button" id="btn-1">FINALIZAR Y GUARDAR</button>
+        <br><button type="button" name="button" id="btn-1" class="btn-1">FINALIZAR Y GUARDAR</button>
         </div>
 
         </div>

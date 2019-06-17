@@ -22,8 +22,9 @@
   position: fixed;
   display: inline-block;
 }
+
 .logo{
-  background-image: url("source/logo_white.png");
+  background-image: url("sources/logo_white.png");
   background-size: cover;
   width: 222px;
   height: 50px;
@@ -43,6 +44,11 @@
     margin-top: 3%;
     margin: 10px;
 }
+
+.material-icons{
+    margin-left: 10px;
+}
+
 .btnOpciones{
   margin-right: 5px;
   width: 150px;
@@ -138,7 +144,7 @@
   color: #900048;
 }
 .footer_logo{
-  background-image: url("source/logo_1.png");
+  background-image: url("sources/logo_1.png");
   background-size: cover;
   width: 80px;
   height: 80px;

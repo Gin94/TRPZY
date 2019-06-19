@@ -81,7 +81,12 @@ $(document).ready(function(){
         var filas = document.getElementById("texto");
 
         for(var i in datos){
-          filas.innerHTML += "<tr><td>"+datos[i].hospedaje_id+"</td><td>"+datos[i].nombre_h+"</td><td>"+datos[i].descripcion_h+"</td></tr>";
+          var id = datos[i].hospedaje_id;
+          var nombre = datos[i].nombre_h;
+          var descripcion = datos[i].descripcion_h;
+          var precio = datos[i].precio_h;
+          var enlace = datos[i].enlace_h;
+          filas.innerHTML += "<tr><div style='background-color: white;width: 600px;height:200px;padding: 30px; border: 1px solid #900048; border-radius: 20px;'><h1>"+nombre+"</h1><p>"+descripcion+"</p><a href='#'>"+enlace+"</a><h1 style='float:right;'>$"+precio+"</h1></div></tr>";
         }
 
       }

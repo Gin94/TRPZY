@@ -97,16 +97,10 @@
               <option value="">4+ habitacion</option>
             </select>
           </div>
+          <button type="button" class="btnEstilo">Filtrar</button>
         </div>
         <div class="boxHospedajes">
           <table>
-            <thead>
-              <tr>
-                <th>id</th>
-                <th>Nombre</th>
-                <th>Descripcion</th>
-              </tr>
-            </thead>
             <tbody id="texto">
             </tbody>
           </table>

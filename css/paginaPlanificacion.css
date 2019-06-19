@@ -199,7 +199,6 @@
 /* hoja2 */
 .hoja2{
   display: none;
-  background-color: gray;
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
@@ -209,13 +208,14 @@
 .boxFiltros{
   float: left;
   display: inline-block;
-  background-color: red;
+  background-color: white;
   width: 13%;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 30px;
   padding-bottom: 30px;
-
+  border: 1px solid #900048;
+  border-radius: 20px;
 }
 .boxHospedajes{
   display: inline-block;
